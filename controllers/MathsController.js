@@ -100,6 +100,7 @@ module.exports =
                                         else
                                         {
                                             this.HttpContext.path.params.value = null;
+                                            this.HttpContext.path.params.error = "can't divide by zero";
                                         }
                                     }
                                     else if(op == '%')
@@ -112,6 +113,7 @@ module.exports =
                                         else
                                         {
                                             this.HttpContext.path.params.value = null;
+                                            this.HttpContext.path.params.error = "can't divide by zero";
                                         }
                                     }
                                 }
